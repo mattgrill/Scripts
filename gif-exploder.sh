@@ -44,7 +44,7 @@ convert -quiet -scale $scale $movie $output/gif_temp.gif
 # Blow apart the frames
 convert $output/gif_temp.gif -coalesce $frames/frame_%03d.gif
 
-# Make a timeline from all the frames and rop it on the desktop
+# Make a timeline from all the frames and drop it on the desktop
 convert +append $frames/frame_*.gif ~/desktop/gif-exploder.jpg
 
 # Delete the working directory
